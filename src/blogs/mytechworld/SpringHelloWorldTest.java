@@ -11,7 +11,7 @@ public class SpringHelloWorldTest {
 
 		XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource(
 				"SpringHelloWorld.xml"));
-
+		System.out.println("test git");
 		SpringHelloWorld myBean = (SpringHelloWorld) beanFactory
 				.getBean("bean1");
 		myBean.helloWorld();
